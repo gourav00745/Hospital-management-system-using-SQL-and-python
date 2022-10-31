@@ -1,0 +1,27 @@
+create database hos;
+use hos;
+create table patient(uid varchar(20) ,name varchar(50), age varchar(20), gender varchar(20),dnt date, ph varchar(50),dr varchar(50));
+create table admission(ID varchar(50),name varchar(50),age varchar(50),gender varchar(50),dr varchar(50),bed_type varchar(50),incoming_date varchar(50),bill varchar(50));
+ create table final(ID varchar(50),name varchar(50),age varchar(50),dr varchar(50),incoming_date varchar(50),days varchar(50),bill varchar(5000)); 
+ create table doc(ID varchar(50),dept varchar(50), name varchar(50));
+ insert into doc(ID,dept,name) values("9854","CD","Rik Banerjee");
+ insert into doc(ID,dept,name) values("4356","CD","RN Ghosh");
+ insert into doc(ID,dept,name) values("8709","NU","Zaheed Hussain");
+ insert into doc(ID,dept,name) values("9865","NU","Arghya deb");
+ insert into doc(ID,dept,name) values("9855","DM","Pinaki Banerjee");
+ insert into doc(ID,dept,name) values("4214","DM","Gourab Deb");
+ insert into doc(ID,dept,name) values("7721","SG","Raktim Ghatak");
+ insert into doc(ID,dept,name) values("2854","SG","Hemlata Joshi");
+ insert into doc(ID,dept,name) values("3211","GS","Madhumita Acharya");
+ insert into doc(ID,dept,name) values("3290","GS","Subham Dutta");
+create table emergency(location varchar(50),ph varchar(50));
+create table staff(ID varchar(50),name varchar(50));
+insert into staff(ID,name) values("1311","Rina sinha");
+insert into staff(ID,name) values("3490","John Thomas");
+insert into staff(ID,name) values("5263","Soham Bagchi");
+insert into staff(ID,name) values("1119","Dolly Saha");
+insert into staff(ID,name) values("0678","Peter J");
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Step1-Run the above code in your Mysql work bench
+step2-Run the python file in your IDE and change the username and password of the Server in the code
